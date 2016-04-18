@@ -13,7 +13,7 @@ var express = require('express')
 
 //mongoose.connect(process.env.MONGOLABURI || "mongodb://birthdayworld_admin:9fpG7Ln9ez93@ds011271.mlab.com:11271/heroku_1ptkn26d");
 
-var mongodbUri = 'mongodb://bday:abc123@ds011271.mlab.com:11271/heroku_1ptkn26d';
+var mongodbUri = 'mongodb://backerbox:abc123@ds061325.mongolab.com:61325/heroku_76r73gw9';
 mongoose.connect(mongodbUri);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
