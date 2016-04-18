@@ -19,6 +19,16 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 var app = express(); //module.exp = express.createServer();
+var handlebars = require('express3-handlebars').create({
+	defaultLayout:'main',
+	helpers: {
+		section: function(name, options){
+			if(!this._sections) this._sections = {};
+			this._sections[name] = options.fn(this);
+			return null;
+		}
+	}
+});
 app.set('view engine', 'handlebars');
 app.engine('handlebars', handlebars.engine);
 
