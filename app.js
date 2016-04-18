@@ -19,6 +19,8 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 var app = express(); //module.exp = express.createServer();
+app.set('view engine', 'handlebars');
+app.engine('handlebars', handlebars.engine);
 
 // Configuration
 
