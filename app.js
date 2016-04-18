@@ -13,7 +13,7 @@ var express = require('express')
 
 mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/mongo_test");
 
-var app = express(); //module = express.createServer();
+var app = express(); //module.exp = express.createServer();
 
 // Configuration
 
