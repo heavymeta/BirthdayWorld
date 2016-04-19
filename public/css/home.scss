@@ -2,7 +2,7 @@ $main_color : #fdfcf6;
 $border_color : #3f3b4e;
 
 html {
-
+margin: 0;
 }
 
 body {
@@ -42,6 +42,11 @@ header {
   height: 57.5vh;
   width: 100vw;
   margin-top: 0;
+
+  background-image: url('../../img/bday.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   h1 {
     font-family: "cooper-black-std", sans-serif;
     font-size: 42pt;
@@ -63,10 +68,6 @@ header {
 .bottom {
   height:85vh;
   width: 100vw;
-  background-image: url('../../img/tuningup.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   .email-entry-field {
     background-color: rgba(39, 34, 45, .8);
