@@ -43,14 +43,14 @@ header {
   width: 100vw;
   margin-top: 0;
   h1 {
-    font-family: museo, sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     font-size: 42pt;
     font-weight: 500;
     margin-left: .8em;
     margin-top: 3.3em;
   }
   h2 {
-    font-family: museo-sans, sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     font-size: 24pt;
     font-weight: 200;
     max-width: 70vw;
@@ -76,7 +76,7 @@ header {
     min-width: 795px;
     p {
       color: white;
-      font-family: museo-sans, sans;
+      font-family: "cooper-black-std", sans;
       font-weight: 100;
       font-size: 16pt;
       margin-left: 2.5em;
@@ -100,7 +100,7 @@ header {
 }
 
 footer {
-  font-family: museo-sans, sans-serif;
+  font-family: "cooper-black-std", sans-serif;
   font-weight: 100;
   height: 7em;
   background-color: rgba(39, 34, 45, 1);
@@ -132,14 +132,14 @@ footer {
     width: 100vw;
     margin-top: 0;
     h1 {
-      font-family: museo, sans-serif;
+      font-family: "cooper-black-std", sans-serif;
       font-size: 32pt;
       font-weight: 500;
       margin-left: .6em;
       margin-top: 3.3em;
     }
     h2 {
-      font-family: museo-sans, sans-serif;
+      font-family: "cooper-black-std", sans-serif;
       font-size: 16pt;
       font-weight: 200;
       max-width: 85vw;
@@ -165,7 +165,7 @@ footer {
       min-width: 300px;
       p {
         color: white;
-        font-family: museo-sans, sans;
+        font-family: "cooper-black-std", sans;
         font-weight: 100;
         font-size: 16pt;
         line-height: 1.2;
@@ -192,7 +192,7 @@ footer {
   }
 
   footer {
-    font-family: museo-sans, sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     font-weight: 100;
     height: 7em;
     background-color: rgba(39, 34, 45, 1);
