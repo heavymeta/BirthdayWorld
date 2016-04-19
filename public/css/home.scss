@@ -131,6 +131,12 @@ footer {
     height: 51vh;
     width: 100vw;
     margin-top: 0;
+
+    background-image: url('../../img/bday.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     h1 {
       font-family: "cooper-black-std", sans-serif;
       font-size: 32pt;
@@ -152,10 +158,6 @@ footer {
   .bottom {
     height: 85vh;
     width: 100vw;
-    background-image: url('../../img/tuningup.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
     .email-entry-field {
       background-color: rgba(39, 34, 45, .8);
