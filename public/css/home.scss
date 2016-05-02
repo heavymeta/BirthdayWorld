@@ -105,8 +105,9 @@ body {
     #formleft {
       width: 60%;
       float: left;
-      padding: 4em;
-      xborder: 1px solid blue;
+      padding-left: 4em;
+      padding-top: 4em;
+      padding-right: 4em;
 
       p {
         color: #337AB7;
@@ -118,7 +119,6 @@ body {
     #formright {
       width: 40%;
       float:right;
-      xborder: 1px solid red;
       padding-right: 4em;
 
       p {
@@ -139,8 +139,19 @@ body {
 
     }
 
+  }
 
+  #button_div {
+    clear: both;
 
+    #checkout_button {
+      width: 228px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 2.5em;
+      position: relative;
+
+    }
   }
 }
 
