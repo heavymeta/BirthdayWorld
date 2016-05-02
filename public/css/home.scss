@@ -25,6 +25,14 @@ body {
   }
 }
 
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .top {
   height: 75vh;
   width: 100vw;
@@ -32,9 +40,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 7em;
+
   .main_title {
     font-family: "cooper-black-std", sans-serif;
-    font-size: 42pt;
+    font-size: 54pt;
     font-weight: 500;
     margin-left: 2em;
     margin-right: 2em;
@@ -43,7 +53,7 @@ body {
   }
   .main_subtitle {
     font-family: "cooper-black-std", sans-serif;
-    font-size: 24pt;
+    font-size: 22pt;
     font-weight: 200;
     margin-left: 3em;
     margin-right: 5em;
@@ -56,40 +66,80 @@ body {
 .bottom {
   height: 85vh;
   width: 100vw;
-  background-color: rgba(39, 34, 45, .8);
+  background-color: rgba(39, 34, 45, 0);
   padding: 2em;
 
+  #prompt-message {
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #337AB7;
+    font-size: 22pt;
+  }
+
+  #world {
+    position: absolute;
+    left: 0;
+		top: 0;
+		height: 90em;
+		width: 100%;
+    z-index: -1;
+
+  }
 
   .form-field {
-    background-color: rgba(39, 34, 45, .8);
+    background-color: rgba(173, 229, 238, 1);
     width: 60em;
     height: 40em;
     margin-left: auto;
     margin-right: auto;
     border-radius: .5em;
 
-
     p {
       color: white;
       font-family: "cooper-black-std", sans;
       font-weight: 100;
       font-size: 16pt;
-      margin-left: 2.5em;
+    }
+
+    #formleft {
+      width: 60%;
+      float: left;
+      padding: 4em;
+      xborder: 1px solid blue;
+
+      p {
+        color: #337AB7;
+        margin-bottom: 1em;
+        font-size: 14pt;
+      }
+    }
+
+    #formright {
+      width: 40%;
+      float:right;
+      xborder: 1px solid red;
+      padding-right: 4em;
+
+      p {
+        margin-top: 2.8em;
+        color: #337AB7;
+        margin-bottom: 1em;
+        font-size: 14pt;
+      }
+      .cal-group {
+        border-radius : 6px;
+        background-color: #fff;
+        padding: 1em;
+      }
+    }
+
+    .bday-form-field {
+      margin-bottom: 1em;
 
     }
-    .email-submit-form {
-      margin-right: 2em;
-      float: right;
-      width: 23em;
-      margin-top: -3em;
-      .btn {
-        float: right;
-      }
-      .form-control {
-        float: left;
-        width: 18em;
-      }
-    }
+
+
 
   }
 }

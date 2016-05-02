@@ -1,18 +1,35 @@
 <section class="top">
-  <p class="main_title">Happy Birthday From The World</p>
-  <p class="main_subtitle">Get a personalized birthday greetings from someone in a different part of the world.</p>
+  <p class="main_title"><span class="rainbow">Birthday World</span></p>
+  <p class="main_subtitle">Send your birthday buddy a special, personalized birthday message from someone, somewhere in the world.</p>
 </section>
 <section class="bottom">
+<canvas id="world"></canvas>
 <div class="form-field">
-  <p id="email-prompt-message">A world of birthday magic starts here.</p>
-  <div class="email-submit-form">
-    <input type="text" class="form-control" id="signup-email-field" placeholder="Your email">
-    <input type="text" class="form-control" id="signup-email-field" placeholder="Friend's email">
-    <input type="text" class="form-control" id="signup-email-field" placeholder="Friend's name">
-    <input type="text" class="form-control" id="signup-email-field" placeholder="Friend's bday">
-    <button type="submit" id="signup-email-button" class="btn btn-primary">Send</button>
-</div>
-</div>
+  <p id="prompt-message">A world of birthday magic starts here.</p>
+    <div id="formleft">
+      <p>Who's your birthday buddy?</p>
+      <input type="text" class="form-control input-lg bday-form-field" id="send-to" placeholder="Your email">
+      <input type="text" class="form-control input-lg bday-form-field" id="send-from" placeholder="Friend's email">
+      <input type="text" class="form-control input-lg bday-form-field" id="to-name" placeholder="Friend's name">
+      <input type="text" class="form-control input-lg bday-form-field" id="to-day" placeholder="Friend's bday">
+    </div>
+    <div id="formright" style="overflow:hidden;">
+      <p>And when's the big day?</p>
+      <div class="cal-group">
+        <div id="datetimepicker12"></div>
+      </div>
+      <script type="text/javascript">
+          $(function () {
+              $('#datetimepicker12').datetimepicker({
+                  inline: true,
+                  format: 'MM/dd',
+                  sideBySide: true
+              });
+          });
+      </script>
+    </div>
+    <button type="submit" id="signup-email-button" class="btn btn-primary btn-lg">Order it</button>
+  </div>
 </section>
 <footer>
   <p>Copyright Momentous LLC 2016</p>
