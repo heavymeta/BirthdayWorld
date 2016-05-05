@@ -32,10 +32,11 @@ exports.faq = function(req, res) {
 };
 
 exports.success = function(req, res) {
-  var name = req.body.os0;
-  var to_email = req.body.os1;
-  var from_email = req.body.os2;
-  var message = req.body.custom;
+  var to_email = req.body.to_email;
+  var to_name = req.body.to_name;
+  var from_email = req.body.from_email;
+  var from_name = req.body.from_name;
+  var message = req.body.message;
   console.log("Message from Paypal");
   console.log(name + " " + to_email + " " + from_email + " " + message);
   res.render('success', { layout: 'second' });
