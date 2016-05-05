@@ -91,7 +91,7 @@ body {
   .form-field {
     background-color: rgba(173, 229, 238, 1);
     width: 60em;
-    height: 46em;
+    height: 50em;
     margin-left: auto;
     margin-right: auto;
     border-radius: .5em;
@@ -159,6 +159,28 @@ body {
       position: relative;
 
     }
+  }
+
+  #price {
+    text-align: center;
+    margin-top: 1.7em;
+    color: #002F86;
+    font-size: 14pt;
+
+  }
+}
+
+.price {
+  background-color: green;
+  height: 5em;
+  text-align: center;
+  font-family: "cooper-black-std", sans;
+  margin-bottom: -4em;
+
+  p {
+    color: #002F86;
+    font-size: 14pt;
+    padding-top:1em;
   }
 }
 
