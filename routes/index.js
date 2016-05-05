@@ -26,3 +26,11 @@ function getClientIp(req) {
 exports.index = function(req, res) {
   res.render('home', { layout: 'home' });
 };
+
+exports.faq = function(req, res) {
+  res.render('faq', { layout: 'second' });
+};
+
+exports.success = function(req, res) {
+  res.render('success', { layout: 'second' });
+};

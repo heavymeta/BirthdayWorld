@@ -40,6 +40,7 @@ app.use(serveStatic(__dirname + '/public'));
 // Routes
 
 app.get('/', routes.index);
+app.get('/faq', routes.faq);
 
 // load errorHandler after routes
 
@@ -52,5 +53,5 @@ if (process.env.NODE_ENV !== "production") {
 
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
-  console.log("Express server listening on port %d in %s mode", process.env.PORT, app.settings.env);
+  console.log("Express server listening on port 3000 in %s mode", process.env.PORT, app.settings.env);
 });
