@@ -15,7 +15,7 @@
       <input type="text" class="form-control input-lg bday-form-field" id="send-from" placeholder="Birthday buddy's email">
       <input type="text" class="form-control input-lg bday-form-field" id="send-to" placeholder="Your email">
       <textarea class="form-control input-lg bday-form-field" rows="5" id="text" placeholder="Special message to deliver"></textarea>
-      <p id="wordcount">40 more words</p>
+      <p id="wordcount">40 words left</p>
     </div>
     <div id="formright" style="overflow:hidden;">
       <p>And when's the big day?</p>
@@ -34,7 +34,12 @@
     </div>
     <div id="button_div">
       <div id="checkout_button">
-        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" alt="Buy now with PayPal" id="pp_button"/>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="LMY78EEB8DGLN">
+          <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </div>
       <p id="price">Just $9.99, and we $plit it half$ies with the ¢ontent ¢reator.</p>
     </div>
@@ -62,6 +67,8 @@
   </div>
 </section>
 <footer>
+  <p id="faq"><a href="/faq">FAQ</a></p>
   <p>Copyright Momentous LLC 2016</p>
   <p>hello@backerbox.co</p>
+  <p>Terms of service</p>
 </footer>
