@@ -32,6 +32,11 @@ exports.faq = function(req, res) {
 };
 
 exports.success = function(req, res) {
+  res.render('success', { layout: 'second' });
+
+};
+
+exports.callback = function(req, res) {
   var to_email = req.body.to_email;
   var to_name = req.body.to_name;
   var from_email = req.body.from_email;
@@ -40,5 +45,4 @@ exports.success = function(req, res) {
   console.log("Message from Paypal");
   console.log(name + " " + to_email + " " + from_email + " " + message);
   res.render('success', { layout: 'second' });
-
 };

@@ -41,7 +41,7 @@ app.use(serveStatic(__dirname + '/public'));
 
 app.get('/', routes.index);
 app.get('/faq', routes.faq);
-app.post('/success', routes.success);
+app.post('/callback', routes.success);
 app.get('/success', routes.success);
 
 // load errorHandler after routes
