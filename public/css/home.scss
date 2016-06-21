@@ -260,81 +260,113 @@ footer {
 
 @media only screen and (max-device-width: 480px) {
 
-  header {
-    height: 2em;
-
-    img {
-      height: 42px;
-      width: 42px;
-      margin-left: 2em;
-      margin-top:2em;
-    }
-  }
-
   .top {
     height: 51vh;
-    width: 100vw;
-    margin-top: 0;
+    padding-top: 6em;
 
-    background-image: url('../../img/bday.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    .main_title {
+      font-size: 26pt;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
 
-    h1 {
-      font-family: "cooper-black-std", sans-serif;
-      font-size: 32pt;
-      font-weight: 500;
-      margin-left: .6em;
-      margin-top: 3.3em;
+    .main_subtitle {
+      font-size: 14pt;
+      margin-left: 1em;
+      margin-right: 1em;
     }
-    h2 {
-      font-family: "cooper-black-std", sans-serif;
-      font-size: 16pt;
-      font-weight: 200;
-      max-width: 85vw;
-      margin-top: .5em;
-      margin-left: 1.3em;
-      margin-bottom: -10em;
-    }
+  }
   }
 
   .bottom {
-    height: 85vh;
+    //height: 85vh;
     width: 100vw;
 
-    .email-entry-field {
-      background-color: rgba(39, 34, 45, .8);
-      width: 100vw;
-      height: 10em;
-      padding-top: .4em;
-      min-width: 300px;
+    #prompt-message {
+      font-size: 18pt;
+    }
+
+    .form-field {
+      background-color: rgba(173, 229, 238, 1);
+      width: 85vw;
+      height: 100em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: .5em;
+      margin-bottom: 2em;
+
       p {
         color: white;
         font-family: "cooper-black-std", sans;
         font-weight: 100;
         font-size: 16pt;
-        line-height: 1.2;
-        margin-left: 1.3em;
-        width: 10em;
-        margin-top: .5em;
       }
-      .email-submit-form {
-        margin-right: 1.5em;
-        float: right;
-        width: 23em;
-        margin-top: .5em;
-        .btn {
-          float: right;
+
+      #formleft {
+        width: 100%;
+        float: none;
+        padding-left: 1em;
+        padding-top: 2em;
+        padding-right: 1em;
+
+        p {
+          color: #337AB7;
+          margin-bottom: 1em;
+          font-size: 14pt;
         }
-        .form-control {
-          float: right;
-          width: 15em;
-          margin-right: .25em;
+
+        #wordcount {
+          font-size: 12pt;
+          margin-top: -.25em;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.58);
         }
       }
 
+      #formright {
+        width: 100%;
+        float:none;
+        margin-left: 1em;
+        margin-right: 1em;
+
+        p {
+          margin-top: 1em;
+          color: #337AB7;
+          margin-bottom: 1.5em;
+          font-size: 14pt;
+        }
+        .cal-group {
+          min-width: 17em;
+          max-width: 22em;
+        }
+      }
+
+      .bday-form-field {
+        margin-bottom: .75em;
+      }
+
     }
+
+    #button_div {
+
+      #checkout_button {
+        width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+        position: relative;
+
+      }
+    }
+
+    #price {
+      text-align: center;
+      margin-top: 1.5em;
+      color: #002F86;
+      font-size: 14pt;
+
+    }
+
   }
 
   footer {
@@ -354,6 +386,6 @@ footer {
       float: right;
       font: 32pt;
     }
-  }
+
 
 }
