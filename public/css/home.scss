@@ -262,7 +262,7 @@ footer {
 
   .top {
     height: 51vh;
-    padding-top: 6em;
+    padding-top: 10em;
 
     .main_title {
       font-size: 26pt;
@@ -276,10 +276,9 @@ footer {
       margin-right: 1em;
     }
   }
-  }
 
   .bottom {
-    //height: 85vh;
+    height: 80em;
     width: 100vw;
 
     #prompt-message {
@@ -304,7 +303,7 @@ footer {
 
       #formleft {
         width: 100%;
-        float: none;
+        float: right;
         padding-left: 1em;
         padding-top: 2em;
         padding-right: 1em;
@@ -325,7 +324,7 @@ footer {
 
       #formright {
         width: 100%;
-        float:none;
+        float:left;
         margin-left: 1em;
         margin-right: 1em;
 
@@ -369,6 +368,47 @@ footer {
 
   }
 
+  .example {
+
+    height: 70em;
+    
+    #example-prompt {
+      font-size: 18pt;
+    }
+
+    .example-unit {
+
+      width: 50%;
+      height: 320px;
+      padding-bottom: 5em;
+      max-width: 70%;
+      margin-bottom:5em;
+
+      .left {
+        float: none;
+      }
+      .right {
+        float:none;
+        width: 100vw;
+
+        .map {
+          float:right;
+          width: 30%;
+          margin-left:3.5em;
+          margin-right: 3em;
+          margin-top: -1em;
+        }
+
+        p {
+          color: #B98FBD;
+          font-size: 14pt;
+          text-align: center;
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+
   footer {
     font-family: "cooper-black-std", sans-serif;
     font-weight: 100;
@@ -386,6 +426,6 @@ footer {
       float: right;
       font: 32pt;
     }
-
+  }
 
 }
